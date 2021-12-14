@@ -22,7 +22,7 @@ abbr {
 }
 
 a {
-    color: #a7a7a7;
+    color: #A7A7A7;
     text-emphasis: none;
     text-decoration: none;
 }
@@ -31,26 +31,61 @@ a:hover {
     color: #0993F3;
 }
 
-/*END General changes*/
+/* CONATINER FOR HOME PAGE */
 
 .container {
-    margin-left: 7.5%;
-    margin-right: 0;
+    margin-left: 6%;
+    margin-right: 6%;
 }
+
+/* TITLE SECTION */
 
 .title {
     width: auto;
-    margin: auto;
-    text-align: left;
+    margin: 0;
     padding: 0;
+    text-align: center;
     line-height: 3em;
+    word-spacing: 2em;
 }
 
 .title h1 {
-    font-size: 38px;
+    font-size: 50px;
     padding: 0;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 30px 0;
+    word-spacing: normal;
 }
+
+/* HOME PAGE INFORMATION */
+
+.information-blocks {
+    float: left;
+    width: 42%;
+    padding: 0 1.5% 0 1.5%;
+    margin: 3% 3% 3% 0;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.information-blocks:hover {
+    transform: scale(1.05);
+}
+
+.row {
+    width: auto;
+    /* display: flex; */
+}
+
+.row img {
+    width: 42%;
+    height: 28%;
+    margin: 3% 0 3% 6%;
+    border-radius: 5px;
+}
+
+/* ALL ICONS */
 
 .fa-linkedin {
     transition: all 0.4s ease-in-out;
@@ -115,29 +150,4 @@ a:hover {
 
 #active {
     background-color: #0993F3;
-}
-
-/* Information Block */
-
-.information-blocks {
-    float: left;
-    width: 40%;
-    padding: 0 1.5% 0 1.5%;
-    margin: 3% 3% 3% 0;
-    background-color: white;
-    color: black;
-    /* border: 2px solid black; */
-    border-radius: 20px;
-    transition: all 0.4s ease-in-out;
-}
-
-.information-blocks:hover {
-    transform: scale(1.05);
-}
-
-img {
-    width: 42%;
-    height: 28%;
-    margin: 3% 0 3% 6%;
-    border-radius: 5px;
 }
