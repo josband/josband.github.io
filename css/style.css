@@ -1,0 +1,143 @@
+/*
+Author: Jonah Osband
+Date Last Modified: 12/13/2021
+Purpose: CSS file for index.html
+*/
+
+/*General changes*/
+
+body {
+    background-color: #000;
+    background-image: url("/images/website-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 46px;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a {
+    color: #a7a7a7;
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0993F3;
+}
+
+/*END General changes*/
+
+.container {
+    margin-left: 7.5%;
+    margin-right: 0;
+}
+
+.title {
+    width: auto;
+    margin: auto;
+    text-align: left;
+    padding: 0;
+    line-height: 3em;
+}
+
+.title h1 {
+    font-size: 38px;
+    padding: 0;
+    margin: 20px 0 10px 0;
+}
+
+.fa-linkedin {
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.2);
+    color: #0077B5;
+}
+
+.fa-github {
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+    color: #6CC644;
+}
+
+.fa-envelope {
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-envelope:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+/*NAVIGATION BAR*/
+
+.navigation-bar {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation-bar li {
+    float: left;
+}
+
+.navigation-bar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-bar li a:hover {
+    background-color: #111;
+}
+
+#active {
+    background-color: #0993F3;
+}
+
+/* Information Block */
+
+.information-blocks {
+    float: left;
+    width: 40%;
+    padding: 0 1.5% 0 1.5%;
+    margin: 3% 3% 3% 0;
+    background-color: white;
+    color: black;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.information-blocks:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 42%;
+    height: 28%;
+    margin: 3% 0 3% 6%;
+    border-radius: 5px;
+}
