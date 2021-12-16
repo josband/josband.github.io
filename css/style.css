@@ -122,11 +122,11 @@ a:hover {
 }
 
 .navigation-bar ul {
-    list-style-type: none;
+    list-style-type: none; /* Makes sure no bullet points */
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    /* background-color: #333; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -142,12 +142,15 @@ a:hover {
     padding: 14px 16px;
     text-decoration: none;
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .navigation-bar li a:hover {
-    background-color: #111;
+    background-color: #a7a7a780;
+    padding: 14px 24px;
 }
 
 #active {
-    background-color: #0993F3;
+    background-color: #00A5FF;
+    padding: 14px 16px; /* REMOVE IF YOU WANT IT TO DYNAMICALLY SHIFT */
 }
