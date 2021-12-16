@@ -132,7 +132,7 @@ abbr {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: #333; */
+    background-color: #a7a7a7c7;
     position: fixed;
     top: 0;
     width: 100%;
@@ -152,7 +152,7 @@ abbr {
 }
 
 .navigation-bar li a:hover {
-    background-color: #a7a7a780;
+    background-color: #a7a7a7;
     padding: 14px 24px;
 }
 
