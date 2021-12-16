@@ -12,23 +12,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     margin: 0;
     padding-top: 46px;
 }
 
 abbr {
     text-decoration: none;
-}
-
-a {
-    color: #A7A7A7;
-    text-emphasis: none;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0993F3;
 }
 
 /* CONATINER FOR HOME PAGE */
@@ -56,6 +46,12 @@ a:hover {
     word-spacing: normal;
 }
 
+.title a {
+    color: #d1d1d1;
+    text-emphasis: none;
+    text-decoration: none;
+}
+
 /* HOME PAGE INFORMATION */
 
 .information-blocks {
@@ -71,6 +67,16 @@ a:hover {
 
 .information-blocks:hover {
     transform: scale(1.05);
+}
+
+.information-blocks a {
+    color: #A7A7A7;
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+.information-blocks a:hover {
+    color: #0993F3;
 }
 
 .row {
@@ -152,5 +158,5 @@ a:hover {
 
 #active {
     background-color: #00A5FF;
-    padding: 14px 16px; /* REMOVE IF YOU WANT IT TO DYNAMICALLY SHIFT */
+    padding: 14px 16px; /* REMOVE IF YOU WANT IT TO DYNAMIC */
 }
