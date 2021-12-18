@@ -24,8 +24,7 @@ abbr {
 /* CONATINER FOR HOME PAGE */
 
 .container {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin: 0 6% 50px 6%;
 }
 
 /* TITLE SECTION */
@@ -159,4 +158,32 @@ abbr {
 #active {
     background-color: #00A5FF;
     padding: 14px 16px; /* REMOVE IF YOU WANT IT TO DYNAMIC */
+}
+
+/* Download Button */
+
+.download-button {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.download-button a {
+    color: white;
+    padding: 18px 24px;
+    background-color: #00A5FF;
+    text-decoration: none;
+    text-emphasis: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.download-button a:hover {
+    background-color: #1377F3;
+}
+
+embed {
+    width: 800px;
+    height: 1032px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
