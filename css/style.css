@@ -64,10 +64,6 @@ abbr {
     transition: all 0.4s ease-in-out;
 }
 
-/* .information-blocks:hover {
-    transform: scale(1.05);
-} */
-
 .information-blocks a {
     color: #A7A7A7;
     text-emphasis: none;
