@@ -8,7 +8,7 @@ Purpose: CSS file for index.html
 
 body {
     background-color: #000;
-    background-image: url("/images/website-background.jpg");
+    background-image: url("/images/website-background2.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -152,7 +152,7 @@ abbr {
 }
 
 #active {
-    background-color: #00A5FF;
+    background-color: #00A5FF; /* Blue #00A5FF */
     padding: 14px 16px; /* REMOVE IF YOU WANT IT TO DYNAMIC */
 }
 
