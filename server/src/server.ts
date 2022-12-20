@@ -1,10 +1,10 @@
 import express, { Express, Request, Response } from "express";
 
 const app: Express = express();
-const port: Number = 3000; // Change to be in dotenv
+const port: Number = 8000; // Change to be in dotenv
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("THIS WORKS EVEN BETTER FOR TYPESCRIPT");
+  res.send("Server Successfully Works!");
 });
 
 app.listen(port, () => {
