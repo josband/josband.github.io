@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Import fonts for this project */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro&display=swap");
+
+html {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Set Theme Colors */
+  --clr-text: #282828;
+  --clr-main: #eee;
+  --clr-secondary: #d0d0d0;
+  --clr-grad-left: #7b4397;
+  --clr-grad-right: #dc2430;
+}
+
+.dark-theme {
+  /* Change colors if dark mode is applied */
+  --clr-text: #fff;
+  --clr-main: #383838;
+  --clr-secondary: #282828;
+  --clr-grad-left: #2bd2ff;
+  --clr-grad-right: #2bff88;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; /* Maybe go back and add Robot as 2nd option */
 }
