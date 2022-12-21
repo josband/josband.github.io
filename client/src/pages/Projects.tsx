@@ -1,6 +1,6 @@
 import "./Projects.css";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <div>
       <h1>Projects</h1>

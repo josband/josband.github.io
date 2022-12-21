@@ -1,10 +1,34 @@
-import "NavBar.css";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import "./NavBar.css";
 
-const NavBar = () => {
+interface Props {
+  darkTheme: boolean;
+  setDarkTheme: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const NavBar: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
+  // TODO: Refactor so dark theme hooks are in this component
+
   return (
-    <div>
-      <h1>This is my nav bar</h1>
-    </div>
+    <nav>
+      <Link to="/">
+        <FontAwesomeIcon icon={faHome} />
+      </Link>
+      <ul>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/resume">Resume</Link>
+        </li>
+      </ul>
+      <FontAwesomeIcon
+        icon={darkTheme ? faMoon : faSun}
+        onClick={() => setDarkTheme(!darkTheme)}
+      />
+    </nav>
   );
 };
 

@@ -1,10 +1,10 @@
 import "./Footer.css";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <div>
-      <h1>This is my footer</h1>
-    </div>
+    <footer>
+      <p>This is my footer</p>
+    </footer>
   );
 };
 

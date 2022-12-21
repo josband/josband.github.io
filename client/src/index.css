@@ -36,4 +36,6 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif; /* Maybe go back and add Robot as 2nd option */
+  background-color: var(--clr-main);
+  color: var(--clr-text);
 }
