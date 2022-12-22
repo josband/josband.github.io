@@ -11,7 +11,7 @@ const SharedLayout: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
   return (
     <>
       <NavBar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
-      <main>
+      <main id="content-wrap">
         <Outlet />
       </main>
       <Footer />

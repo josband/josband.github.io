@@ -14,7 +14,7 @@
 }
 
 .primary-header {
-  height: 100px;
+  height: 80px;
   background-color: var(--clr-main);
   border-bottom: 4px solid var(--clr-secondary);
   font-size: 24px;
@@ -35,8 +35,8 @@
   text-decoration: none;
 }
 
+/* REPLACED WITH TEXT-GRADIENT UTILITY CLASS
 .active {
-  /* Start Gradient Text */
   background-color: var(--clr-grad-left);
   background-image: linear-gradient(
     90deg,
@@ -46,5 +46,4 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* End Gradient Text */
-}
+} */

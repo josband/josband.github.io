@@ -41,3 +41,16 @@ body {
   background-color: var(--clr-main);
   color: var(--clr-text);
 }
+
+/* To make footer stick to bottom */
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* 
+In case there are weird issues. I believe border-box solves this
+Also could move to SharedLayout.css
+#content-wrap {
+  padding-bottom: 80px;
+} */

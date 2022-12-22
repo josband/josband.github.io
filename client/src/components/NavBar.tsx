@@ -23,7 +23,7 @@ const NavBar: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
         <ul id="primary-navigation" className="primary-navigation">
           <li>
             <NavLink
-              className={({ isActive }) => (isActive ? "active" : "")}
+              className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/projects"
             >
               Projects
@@ -31,7 +31,7 @@ const NavBar: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => (isActive ? "active" : "")}
+              className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/teaching"
             >
               Teaching
@@ -39,7 +39,7 @@ const NavBar: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => (isActive ? "active" : "")}
+              className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/resume"
             >
               Resume

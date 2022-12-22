@@ -1,0 +1,23 @@
+.primary-footer {
+  font-size: 24px;
+  background-color: var(--clr-secondary);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.primary-social {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.primary-social a {
+  color: var(--clr-text);
+  text-decoration: none;
+}
