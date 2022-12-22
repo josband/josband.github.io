@@ -17,13 +17,30 @@ html {
 }
 
 :root {
-  /* Set Theme Colors */
+  /* Set Light Theme Colors */
   --clr-text: #282828;
   --clr-main: #eee;
   --clr-secondary: #d0d0d0;
   --clr-grad-left: #7b4397;
   --clr-grad-right: #dc2430;
+  --gradient: linear-gradient(
+    90deg,
+    var(--clr-grad-left) var(--grad-left-per),
+    var(--clr-grad-right) 100%
+  );
   --grad-left-per: 0%;
+}
+
+/* To make footer stick to bottom */
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; /* Maybe go back and add Roboto as 2nd option */
+  background-color: var(--clr-main);
+  color: var(--clr-text);
 }
 
 .dark-theme {
@@ -33,24 +50,18 @@ html {
   --clr-secondary: #282828;
   --clr-grad-left: #2bd2ff;
   --clr-grad-right: #2bff88;
+  --gradient: linear-gradient(
+    90deg,
+    var(--clr-grad-left) var(--grad-left-per),
+    var(--clr-grad-right) 100%
+  );
   --clr-left-per: 37%;
 }
 
-body {
-  font-family: "Open Sans", sans-serif; /* Maybe go back and add Roboto as 2nd option */
-  background-color: var(--clr-main);
-  color: var(--clr-text);
+.text-gradient {
+  background-color: var(--clr-grad-left);
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-/* To make footer stick to bottom */
-#root {
-  position: relative;
-  min-height: 100vh;
-}
-
-/* 
-In case there are weird issues. I believe border-box solves this
-Also could move to SharedLayout.css
-#content-wrap {
-  padding-bottom: 80px;
-} */

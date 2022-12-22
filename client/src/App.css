@@ -1,15 +1,3 @@
-.text-gradient {
-  background-color: var(--clr-grad-left);
-  background-image: linear-gradient(
-    90deg,
-    var(--clr-grad-left) var(--grad-left-per),
-    var(--clr-grad-right) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* .App {
   text-align: center;
 }

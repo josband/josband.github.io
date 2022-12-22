@@ -16,6 +16,7 @@ const NavBar: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
       <div className="logo">
         <NavLink to="/">
           <FontAwesomeIcon icon={faHome} />
+          {/* <i className="fa-solid fa-house"></i> */}
         </NavLink>
       </div>
 
