@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
@@ -12,23 +12,49 @@ const NavBar: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
   // TODO: Refactor so dark theme hooks are in this component
 
   return (
-    <nav>
-      <Link to="/">
-        <FontAwesomeIcon icon={faHome} />
-      </Link>
-      <ul>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-      </ul>
-      <FontAwesomeIcon
-        icon={darkTheme ? faMoon : faSun}
-        onClick={() => setDarkTheme(!darkTheme)}
-      />
-    </nav>
+    <header className="primary-header">
+      <div className="logo">
+        <NavLink to="/">
+          <FontAwesomeIcon icon={faHome} />
+        </NavLink>
+      </div>
+
+      <nav>
+        <ul id="primary-navigation" className="primary-navigation">
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/projects"
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/teaching"
+            >
+              Teaching
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/resume"
+            >
+              Resume
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="theme-toggle">
+        <FontAwesomeIcon
+          icon={darkTheme ? faMoon : faSun}
+          onClick={() => setDarkTheme(!darkTheme)}
+        />
+      </div>
+    </header>
   );
 };
 

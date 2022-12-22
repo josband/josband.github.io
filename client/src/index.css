@@ -23,6 +23,7 @@ html {
   --clr-secondary: #d0d0d0;
   --clr-grad-left: #7b4397;
   --clr-grad-right: #dc2430;
+  --grad-left-per: 0%;
 }
 
 .dark-theme {
@@ -32,10 +33,11 @@ html {
   --clr-secondary: #282828;
   --clr-grad-left: #2bd2ff;
   --clr-grad-right: #2bff88;
+  --clr-left-per: 37%;
 }
 
 body {
-  font-family: "Open Sans", sans-serif; /* Maybe go back and add Robot as 2nd option */
+  font-family: "Open Sans", sans-serif; /* Maybe go back and add Roboto as 2nd option */
   background-color: var(--clr-main);
   color: var(--clr-text);
 }

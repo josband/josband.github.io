@@ -1,0 +1,50 @@
+/* Primary Header */
+.logo {
+  margin: 0 2rem;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  margin: 0 2rem;
+}
+
+.theme-toggle > svg {
+  /* Width of icon does not change */
+  min-width: 24px;
+}
+
+.primary-header {
+  height: 100px;
+  background-color: var(--clr-main);
+  border-bottom: 4px solid var(--clr-secondary);
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.primary-navigation {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.primary-header a {
+  color: var(--clr-text);
+  text-decoration: none;
+}
+
+.active {
+  /* Start Gradient Text */
+  background-color: var(--clr-grad-left);
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-grad-left) var(--grad-left-per),
+    var(--clr-grad-right) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* End Gradient Text */
+}
