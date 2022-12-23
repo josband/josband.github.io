@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -8,28 +7,10 @@ import SharedLayout from "./pages/SharedLayout";
 import "./App.css";
 
 const App: React.FC = () => {
-  // Todo: Add cookie to track what theme you prefer
-  const [darkTheme, setDarkTheme] = useState<boolean>(
-    window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
-
-  // This will also run on mount so no worries!
-  useEffect(() => {
-    darkTheme
-      ? document.body.classList.add("dark-theme")
-      : document.body.classList.remove("dark-theme");
-  }, [darkTheme]);
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <SharedLayout darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
-          }
-        >
+        <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="teaching" element={<Teaching />} />

@@ -1,5 +1,5 @@
 /* Import fonts for this project */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Source+Code+Pro&display=swap");
 
 html {
   box-sizing: border-box;
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif; /* Maybe go back and add Roboto as 2nd option */
+  font-family: "Open Sans", "Roboto", sans-serif; /* Maybe go back and add Roboto as 2nd option */
   background-color: var(--clr-main);
   color: var(--clr-text);
 }

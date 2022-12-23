@@ -3,15 +3,10 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "./SharedLayout.css";
 
-interface Props {
-  darkTheme: boolean;
-  setDarkTheme: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const SharedLayout: React.FC<Props> = ({ darkTheme, setDarkTheme }: Props) => {
+const SharedLayout: React.FC = () => {
   return (
     <>
-      <NavBar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+      <NavBar />
       <main id="content-wrap">
         <Outlet />
       </main>
