@@ -1,0 +1,9 @@
+.user-image {
+  display: inline-block;
+  min-width: 352px;
+  min-height: 352px;
+  background-image: url("../../public/assets/SquareProfile.jpg");
+  background-size: 352px;
+  border: 6px solid var(--clr-secondary);
+  border-radius: 50%;
+}
