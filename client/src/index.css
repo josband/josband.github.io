@@ -1,10 +1,6 @@
 /* Import fonts for this project */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Source+Code+Pro&display=swap");
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -14,6 +10,16 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Roboto", sans-serif; /* Maybe go back and add Roboto as 2nd option */
+  background-color: var(--clr-main);
+  color: var(--clr-text);
 }
 
 :root {
@@ -31,18 +37,6 @@ html {
   --grad-left-per: 0%;
 }
 
-/* To make footer stick to bottom */
-#root {
-  position: relative;
-  min-height: 100vh;
-}
-
-body {
-  font-family: "Open Sans", "Roboto", sans-serif; /* Maybe go back and add Roboto as 2nd option */
-  background-color: var(--clr-main);
-  color: var(--clr-text);
-}
-
 .dark-theme {
   /* Change colors if dark mode is applied */
   --clr-text: #fff;
@@ -56,6 +50,12 @@ body {
     var(--clr-grad-right) 100%
   );
   --clr-left-per: 37%;
+}
+
+/* To make footer stick to bottom */
+#root {
+  position: relative;
+  min-height: 100vh;
 }
 
 .text-gradient {

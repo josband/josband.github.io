@@ -1,7 +1,23 @@
+.profile {
+  margin: 0.5rem 2rem;
+  display: flex;
+  gap: min(7.5rem, 10%);
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 11rem);
+}
+
+.summary {
+  text-align: center;
+  display: flex;
+  gap: 2.25rem;
+  flex-direction: column;
+}
+
 .user-image {
-  display: inline-block;
   min-width: 352px;
   min-height: 352px;
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.75));
   background-image: url("../../public/assets/SquareProfile.jpg");
   background-size: 352px;
   border: 6px solid var(--clr-secondary);

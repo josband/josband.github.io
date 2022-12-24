@@ -2,5 +2,5 @@
     In case there are weird issues. I believe border-box solves this
 */
 #content-wrap {
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
