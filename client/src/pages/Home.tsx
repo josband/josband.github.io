@@ -19,7 +19,7 @@ const Home: React.FC = () => {
         {/* 
         Need to place the image within the div to make adding the border not 
         show the edge
-      */}
+        */}
         <div className="user-image"></div>
       </section>
     </>
