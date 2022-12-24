@@ -5,11 +5,15 @@ const Home: React.FC = () => {
     <>
       <section className="profile">
         <article className="summary">
-          <p className="typing">Hello, I'm Jonah Osband</p>
-          <p>Computer Science student at the University of Pittsburgh</p>
-          <p>
+          <p className="text-gradient typing heading">
+            Hello, I'm Jonah Osband
+          </p>
+          <p className="subheading">
+            Computer Science Student at The University of Pittsburgh
+          </p>
+          <p className="primary-content">
             I am currently a junior working to complete my bachelors degree,
-            with an interest in full-stack development and machine learning
+            with an interest in full-stack development and machine learning.
           </p>
         </article>
         {/* 

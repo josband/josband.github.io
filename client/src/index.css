@@ -35,6 +35,8 @@ body {
     var(--clr-grad-right) 100%
   );
   --grad-left-per: 0%;
+  --typewriter-speed: 5s;
+  --typewriter-characters: 23;
 }
 
 .dark-theme {

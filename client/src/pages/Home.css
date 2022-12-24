@@ -1,7 +1,9 @@
+/* Look into clamp() function */
+
 .profile {
   margin: 0.5rem 2rem;
   display: flex;
-  gap: min(7.5rem, 10%);
+  gap: min(7.5rem, 10%); /* Figure out min-gap */
   justify-content: space-between;
   align-items: center;
   min-height: calc(100vh - 11rem);
@@ -12,14 +14,78 @@
   display: flex;
   gap: 2.25rem;
   flex-direction: column;
+  align-items: center;
+}
+
+.summary > p {
+  width: fit-content;
+  display: inline-block;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.primary-content {
+  font-size: 1.5rem;
+}
+
+.typing {
+  font-size: clamp(1rem, 3vw + 1rem, 3rem);
+  font-family: "Source Code Pro", monospace;
+  white-space: nowrap;
+  font-weight: normal;
+  position: relative;
+}
+
+.typing::before,
+.typing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typing::before {
+  background: var(--clr-main);
+  animation: typewriter var(--typewriter-speed)
+    steps(var(--typewriter-characters)) 1s forwards;
+}
+
+.typing::after {
+  width: 0.125em;
+  background: transparent;
+  animation: typewriter var(--typewriter-speed)
+      steps(var(--typewriter-characters)) 1s forwards,
+    blink 750ms steps(var(--typewriter-characters)) 10;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: #181818;
+  }
 }
 
 .user-image {
-  min-width: 352px;
-  min-height: 352px;
+  min-width: 312px;
+  min-height: 312px;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.75));
   background-image: url("../../public/assets/SquareProfile.jpg");
-  background-size: 352px;
+  background-size: 312px;
   border: 6px solid var(--clr-secondary);
   border-radius: 50%;
 }
