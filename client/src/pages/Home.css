@@ -12,6 +12,7 @@
 @media (width < 1150px) {
   .profile {
     flex-direction: column-reverse;
+    justify-content: start;
     gap: 2rem;
   }
 }
