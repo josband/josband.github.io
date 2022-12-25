@@ -31,6 +31,5 @@ export function setCookie(
   // Encode the value, create the cookie, and save it
   value = encodeURIComponent(value);
   const cookie: string = `${key}=${value};expires=${date.toUTCString()};Secure`;
-  console.log(cookie);
   document.cookie = cookie;
 }

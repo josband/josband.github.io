@@ -1,0 +1,8 @@
+.resume-description {
+  font-size: 1.5rem;
+}
+
+#resume {
+  height: 100vh;
+  width: min(850px, 95%);
+}

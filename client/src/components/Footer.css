@@ -29,3 +29,30 @@
   color: var(--clr-text);
   text-decoration: none;
 }
+
+.fa-github {
+  transition: color ease-in 200ms;
+}
+
+.fa-github:hover {
+  color: #7ce38b;
+  transition: color ease-in 200ms;
+}
+
+.fa-linkedin {
+  transition: color ease-in 200ms;
+}
+
+.fa-linkedin:hover {
+  color: #0072b1;
+  transition: color ease-in 200ms;
+}
+
+.fa-envelope {
+  transition: color ease-in 200ms;
+}
+
+.fa-envelope:hover {
+  color: #ff6969;
+  transition: color ease-in 200ms;
+}
