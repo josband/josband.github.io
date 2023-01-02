@@ -1,6 +1,8 @@
 import "./Home.css";
 
 const Home: React.FC = () => {
+  document.title = "Jonah Osband | Home";
+
   return (
     <>
       <section className="profile">

@@ -24,7 +24,7 @@ body {
 
 :root {
   /* Set Light Theme Colors */
-  --clr-text: #282828;
+  --clr-text: #383838;
   --clr-main: #eee;
   --clr-secondary: #d0d0d0;
   --clr-grad-left: #7b4397;
@@ -41,7 +41,7 @@ body {
 
 .dark-theme {
   /* Change colors if dark mode is applied */
-  --clr-text: #fff;
+  --clr-text: #ddd;
   --clr-main: #383838;
   --clr-secondary: #282828;
   --clr-grad-left: #2bd2ff;

@@ -1,0 +1,41 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  width: 600px;
+}
+
+.project-details p {
+  align-items: flex-start;
+}
+
+.project-title {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--clr-text);
+}
+
+.project-title::after {
+  content: "";
+  display: block;
+  height: 0.1em;
+  background-color: var(--clr-text);
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+}
+
+.project-details {
+  /* Using flex to keep the spacing */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}

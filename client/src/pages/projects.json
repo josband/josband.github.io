@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Pitt CSC Hacks",
+    "link": "https://github.com/josband/CSC-Hacks-2022",
+    "image": "Website_Design.jpg",
+    "tech": "Typescript, Javascript, React, Express, Node, MongoDB",
+    "description": "Created an application for simpler job finding experience."
+  },
+  {
+    "title": "PittBOT",
+    "link": "https://github.com/josband/PittBOT",
+    "image": "Bot.jpg",
+    "tech": "Python, SQLite, Pycord",
+    "description": "Official Bot for Pitt Residence Discord Servers."
+  },
+  {
+    "title": "Chess Game",
+    "link": "https://github.com/josband/java-chess",
+    "image": "Chess.jpg",
+    "tech": "Java, Java Swing",
+    "description": "Implementation of a game I am not very good at."
+  },
+  {
+    "title": "Best Neighborhood in Pittsburgh",
+    "link": "https://github.com/josband/CMPINF10_Final_Project",
+    "image": "Neighborhood.jpg",
+    "tech": "Python, Pandas, Geopandas, Matplotlib, NumPy",
+    "description": "An introduction to Data Analysis work in a team"
+  }
+]

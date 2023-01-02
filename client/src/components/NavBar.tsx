@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
 
   return (
     <header className="primary-header">
-      <div className="logo">
+      <div className="logo" title="Home">
         <NavLink
           className={({ isActive }) => (isActive ? "text-gradient" : "")}
           to="/"
@@ -68,7 +68,7 @@ const NavBar: React.FC = () => {
         </ul>
       </nav>
 
-      <div className="theme-toggle">
+      <div className="theme-toggle" title="Toggle Theme">
         <FontAwesomeIcon
           icon={darkTheme ? faMoon : faSun}
           onClick={() => setDarkTheme(!darkTheme)}

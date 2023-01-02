@@ -1,6 +1,8 @@
 import "./Resume.css";
 
 const Resume: React.FC = () => {
+  document.title = "Jonah Osband | Resume";
+
   return (
     <section className="centered-content">
       <div className="resume-description">
