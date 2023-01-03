@@ -16,15 +16,19 @@ const ProjectItem = ({ title, link, image, tech, description }: Props) => {
       <a className="project-title" href={link} target="_blank" rel="noreferrer">
         {title} <FontAwesomeIcon icon={faChain} />
       </a>
+      <div className="overlay">
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/${image}`}
+          alt={`${title} Demo`}
+          className="project-image"
+        />
+        <div className="project-description">
+          <p>{description}</p>
+        </div>
+      </div>
 
-      <img
-        src={`${process.env.PUBLIC_URL}/assets/${image}`}
-        alt={`${title} Demo`}
-        className="project-image"
-      />
       <div className="project-details">
-        <p>Tech: {tech}</p>
-        <p>Description: {description}</p>
+        <p>Tech Stack: {tech}</p>
       </div>
     </div>
   );

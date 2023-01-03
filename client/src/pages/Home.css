@@ -9,7 +9,7 @@
   min-height: calc(100vh - 12rem);
 }
 
-@media (width < 1150px) {
+@media (width <= 1150px) {
   .profile {
     flex-direction: column-reverse;
     justify-content: start;

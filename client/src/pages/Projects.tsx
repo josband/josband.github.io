@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
   document.title = "Jonah Osband | Projects";
 
   return (
-    <>
+    <div className="projects-container">
       {Data.map((project, index: number) => (
         <ProjectItem
           key={index}
@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
           description={project.description}
         />
       ))}
-    </>
+    </div>
   );
 };
 
