@@ -1,6 +1,6 @@
 import ProjectItem from "../components/ProjectItem";
 import "./Projects.css";
-import Data from "./projects.json";
+import Data from "../assets/projects.json";
 
 // Will store project details temporarily in a json file but afterwards will
 // update to be stored in a MongoDB database

@@ -1,3 +1,4 @@
+import "../assets/Jonah_Osband_Resume.pdf";
 import "./Resume.css";
 
 const Resume: React.FC = () => {
@@ -11,9 +12,7 @@ const Resume: React.FC = () => {
       <object
         id="resume"
         type="application/pdf"
-        data={
-          process.env.PUBLIC_URL + "assets/Jonah_Osband_Resume.pdf?#zoom=FitH"
-        }
+        data={require("../assets/Jonah_Osband_Resume.pdf?#zoom=FitH")}
         aria-label="Jonah's Resume"
       ></object>
     </section>

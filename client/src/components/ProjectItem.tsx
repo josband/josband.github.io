@@ -28,7 +28,7 @@ const ProjectItem = ({ title, link, image, tech, description }: Props) => {
       </div>
 
       <div className="project-details">
-        <p>Tech Stack: {tech}</p>
+        <p>Technology: {tech}</p>
       </div>
     </div>
   );
