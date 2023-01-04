@@ -36,8 +36,8 @@
   animation: pulseToDark 650ms ease-out;
 }
 
-#theme-toggle::after {
-  /* content: attr(aria-label); */
+/* #theme-toggle::after {
+  content: attr(aria-label);
   position: absolute;
   color: var(--clr-main);
   background: var(--clr-text);
@@ -53,7 +53,7 @@
   transform: scale(0);
   transform-origin: top;
   transition: transform 0ms linear 100ms, opacity 100ms linear;
-}
+} */
 
 #theme-toggle:hover
 /* #theme-toggle:focus */ {
