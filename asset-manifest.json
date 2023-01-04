@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6036fa7a.css",
+    "main.js": "/static/js/main.71ad47dc.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/SquareProfile.jpg": "/static/media/SquareProfile.0c908451235cb5f6b807.jpg",
+    "static/media/Jonah_Osband_Resume.pdf?#zoom=FitH": "/static/media/Jonah_Osband_Resume.260732e980631c21b887.pdf",
+    "index.html": "/index.html",
+    "static/media/theme-spinner.svg": "/static/media/theme-spinner.67a8a234ae6a44013105357a7b86e249.svg",
+    "static/media/logo.svg": "/static/media/logo.8a3ade1ec6d1b9346a8b029e2b1cf6b6.svg",
+    "main.6036fa7a.css.map": "/static/css/main.6036fa7a.css.map",
+    "main.71ad47dc.js.map": "/static/js/main.71ad47dc.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6036fa7a.css",
+    "static/js/main.71ad47dc.js"
+  ]
+}
