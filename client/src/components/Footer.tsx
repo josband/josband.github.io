@@ -9,17 +9,21 @@ const Footer: React.FC = () => {
       <span className="text-gradient">Connect With Me:</span>
       <ul className="primary-social">
         <li>
-          <a href="https://www.linkedin.com/in/jonah-osband/">
+          <a
+            href="https://www.linkedin.com/in/jonah-osband/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
         <li>
-          <a href="https://github.com/josband">
+          <a href="https://github.com/josband" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a href="mailto:jro44@pitt.edu">
+          <a href="mailto:jro44@pitt.edu" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>

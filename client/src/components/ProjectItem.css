@@ -66,4 +66,8 @@
     font-size: 1rem;
     width: 300px;
   }
+
+  .project-image {
+    height: auto;
+  }
 }

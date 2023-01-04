@@ -1,6 +1,5 @@
 .primary-footer {
   display: block;
-  min-width: fit-content;
   font-size: 24px;
   background-color: var(--clr-secondary);
   display: flex;

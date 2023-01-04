@@ -2,7 +2,7 @@ import "../assets/Jonah_Osband_Resume.pdf";
 import "./Resume.css";
 
 const Resume: React.FC = () => {
-  document.title = "Jonah Osband | Resume";
+  document.title = "Resume | Jonah Osband";
 
   return (
     <section className="centered-content">

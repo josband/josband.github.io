@@ -1,0 +1,41 @@
+.content-container {
+  max-width: 960px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-container hr {
+  width: 100%;
+  border: 0;
+  border-top: 3px solid var(--clr-text);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+
+.section-table th {
+  font-size: 1.5rem;
+  height: 3rem;
+  background-color: #6c7ae0;
+}
+
+.section-table td {
+  font-size: 1.25rem;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+.section-table td,
+.section-table th {
+  border: 1px solid var(--clr-text);
+}

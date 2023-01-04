@@ -6,7 +6,7 @@ import Data from "../assets/projects.json";
 // update to be stored in a MongoDB database
 
 const Projects: React.FC = () => {
-  document.title = "Jonah Osband | Projects";
+  document.title = "Projects | Jonah Osband";
 
   return (
     <div className="projects-container">

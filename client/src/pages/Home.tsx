@@ -1,7 +1,7 @@
 import "./Home.css";
 
 const Home: React.FC = () => {
-  document.title = "Jonah Osband | Home";
+  document.title = "Home | Jonah Osband";
 
   return (
     <>

@@ -49,14 +49,14 @@ const NavBar: React.FC = () => {
               Projects
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/teaching"
             >
               Teaching
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? "text-gradient" : "")}
