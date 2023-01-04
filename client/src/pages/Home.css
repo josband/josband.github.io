@@ -1,0 +1,122 @@
+/* Look into clamp() function */
+
+.profile {
+  margin: 1rem 2rem;
+  display: flex;
+  gap: min(7.5rem, 10%); /* Figure out min-gap */
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 12rem);
+}
+
+.summary {
+  text-align: center;
+  display: flex;
+  gap: 2.25rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary > p {
+  width: fit-content;
+  display: inline-block;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: clamp(0.75rem, 2vw + 1rem, 2rem);
+  font-weight: bold;
+}
+
+.primary-content {
+  font-size: clamp(0.5rem, 1.5vw + 0.5rem, 1.5rem);
+}
+
+.typing {
+  font-size: clamp(1rem, 3vw + 1rem, 3rem);
+  font-family: "Source Code Pro", monospace;
+  white-space: nowrap;
+  font-weight: normal;
+  position: relative;
+}
+
+.typing::before,
+.typing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typing::before {
+  background: var(--clr-main);
+  animation: typewriter var(--typewriter-speed)
+    steps(var(--typewriter-characters)) 1s forwards;
+}
+
+.typing::after {
+  width: 0.125em;
+  background: transparent;
+  animation: typewriter var(--typewriter-speed)
+      steps(var(--typewriter-characters)) 1s forwards,
+    blink 750ms steps(var(--typewriter-characters)) 10;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 3s ease 8s forwards;
+  animation-iteration-count: 1;
+}
+
+.user-image {
+  min-width: 312px;
+  min-height: 312px;
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.75));
+  background-image: url("../assets/SquareProfile.jpg");
+  background-size: 312px;
+  border: 6px solid var(--clr-secondary);
+  border-radius: 50%;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: #181818;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (width <= 1150px) {
+  .profile {
+    flex-direction: column-reverse;
+    justify-content: start;
+    gap: 2rem;
+  }
+
+  .fade-in {
+    opacity: 1;
+    animation: none;
+  }
+}

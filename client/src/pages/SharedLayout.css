@@ -1,0 +1,6 @@
+/* 
+    In case there are weird issues. I believe border-box solves this
+*/
+#content-wrap {
+  padding: 5rem 0;
+}
