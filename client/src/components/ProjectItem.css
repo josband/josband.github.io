@@ -35,6 +35,8 @@
 }
 
 .project-description {
+  font-size: 0.75em;
+  overflow-y: auto;
   position: absolute;
   top: 0;
   border-radius: 1.25rem;

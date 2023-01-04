@@ -4,27 +4,27 @@
     "link": "https://github.com/josband/CSC-Hacks-2022",
     "image": "img/Website_Design.jpg",
     "tech": "Typescript, Javascript, React, Express, Node, MongoDB",
-    "description": "Created an application for simpler job finding experience."
+    "description": "I created a full-stack application with two other students in a two week long hackathon. It streamlines the user experience of Pitt's CS Clubs internship repository which has over 15,000 stars."
   },
   {
     "title": "PittBOT",
     "link": "https://github.com/josband/PittBOT",
     "image": "img/Bot.jpg",
     "tech": "Python, SQLite, Pycord",
-    "description": "Official Bot for Pitt Residence Discord Servers."
+    "description": "Worked on the official bot for Pitt Residence Discord Servers. I more specifically focused on emoji synchronization between all residence hall servers with approval features for administrators."
   },
   {
     "title": "Chess Game",
     "link": "https://github.com/josband/java-chess",
     "image": "img/Chess.jpg",
     "tech": "Java, Swing",
-    "description": "Implementation of a game I am not very good at."
+    "description": "Implementation of a game I am not very good at. I created the underlying pieces and check mate detection and legal move behavior. This was my first major personal project."
   },
   {
     "title": "Best Neighborhood in Pittsburgh",
     "link": "https://github.com/josband/CMPINF10_Final_Project",
     "image": "img/Neighborhood.jpg",
     "tech": "Python, Pandas, Geopandas, Matplotlib, NumPy",
-    "description": "An introduction to Data Analysis work in a team"
+    "description": "An introduction to Data Analysis work in a team. We were tasked with finding the best neighborhood in Pittsburgh using open source Western Pennsylvania Regional Data Center data."
   }
 ]

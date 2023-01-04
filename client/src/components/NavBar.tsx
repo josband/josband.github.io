@@ -4,15 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { enableDarkTheme, enableLightTheme } from "../util/DarkTheme";
 import { getCookie } from "../util/Cookie";
+import { ReactComponent as Logo } from "../assets/logo.svg";
 import "./NavBar.css";
 
 const NavBar: React.FC = () => {
-  // TODO: Refactor so dark theme hooks are in this component
   // Refer to this for why called twice: https://stackoverflow.com/questions/62106596/reactjs-setstate-being-called-twice-in-a-function-called-once-why
   const [darkTheme, setDarkTheme] = useState<boolean>(() => {
     // Check if cookie does not exist, if not, check what the user's preferred theme is
     const cookieVal = getCookie("theme");
 
+    // Use prefered theme if not cookie exists
     if (cookieVal === "")
       return (
         window.matchMedia &&
@@ -30,18 +31,27 @@ const NavBar: React.FC = () => {
 
   return (
     <header className="primary-header">
-      <div className="logo" title="Home">
-        <NavLink
+      <div className="logo">
+        <Logo />
+        {/* <NavLink
           className={({ isActive }) => (isActive ? "text-gradient" : "")}
           to="/"
         >
           <i className="fa-solid fa-house"></i>
-        </NavLink>
+        </NavLink> */}
       </div>
 
       <nav>
         <ul id="primary-navigation" className="primary-navigation">
-          <li>
+          <li title="Home">
+            <NavLink
+              className={({ isActive }) => (isActive ? "text-gradient" : "")}
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li title="Projects">
             <NavLink
               className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/projects"
@@ -57,7 +67,7 @@ const NavBar: React.FC = () => {
               Teaching
             </NavLink>
           </li> */}
-          <li>
+          <li title="Resume">
             <NavLink
               className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/resume"
