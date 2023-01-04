@@ -70,6 +70,7 @@
 
 .fade-in {
   opacity: 0;
+  transform: translateY(20px);
   animation: fadeIn 3s ease 8s forwards;
   animation-iteration-count: 1;
 }
