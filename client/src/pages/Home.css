@@ -9,14 +9,6 @@
   min-height: calc(100vh - 12rem);
 }
 
-@media (width <= 1150px) {
-  .profile {
-    flex-direction: column-reverse;
-    justify-content: start;
-    gap: 2rem;
-  }
-}
-
 .summary {
   text-align: center;
   display: flex;
@@ -76,6 +68,21 @@
     blink 750ms steps(var(--typewriter-characters)) 10;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 3s ease 8s 1 forwards;
+}
+
+.user-image {
+  min-width: 312px;
+  min-height: 312px;
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.75));
+  background-image: url("../assets/SquareProfile.jpg");
+  background-size: 312px;
+  border: 6px solid var(--clr-secondary);
+  border-radius: 50%;
+}
+
 @keyframes typewriter {
   to {
     left: 100%;
@@ -88,12 +95,26 @@
   }
 }
 
-.user-image {
-  min-width: 312px;
-  min-height: 312px;
-  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.75));
-  background-image: url("../assets/SquareProfile.jpg");
-  background-size: 312px;
-  border: 6px solid var(--clr-secondary);
-  border-radius: 50%;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (width <= 1150px) {
+  .profile {
+    flex-direction: column-reverse;
+    justify-content: start;
+    gap: 2rem;
+  }
+
+  .fade-in {
+    opacity: 1;
+    animation: none;
+  }
 }
