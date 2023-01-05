@@ -1,9 +1,6 @@
 #hamburger-button {
   background: transparent;
   border: none;
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
 }
 
 .hamburger {
