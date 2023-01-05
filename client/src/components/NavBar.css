@@ -10,16 +10,6 @@
   display: block;
 }
 
-.theme-toggle {
-  cursor: pointer;
-  margin: 0 2rem;
-}
-
-.theme-toggle > svg {
-  /* Width of icon does not change */
-  min-width: 24px;
-}
-
 .primary-header {
   position: fixed;
   top: 0;
@@ -32,7 +22,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -84,5 +73,41 @@
 } */
 
 /* Responsive Navigation */
+#hamburger-button {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 @media (width < 600px) {
+  #hamburger-button {
+    position: initial;
+    margin: 0 1.5rem;
+  }
+
+  nav {
+    width: 100%;
+    background: var(--clr-main);
+    text-align: center;
+    border-bottom: 4px solid var(--clr-secondary);
+    position: absolute;
+    top: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 200ms ease-in;
+  }
+
+  .primary-navigation {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #hamburger-button[aria-expanded="true"] ~ nav {
+    transform: scale(1, 1);
+  }
+
+  /* If you want content to but pushed will have to add this */
+  /* #content-wrap {
+  } */
 }

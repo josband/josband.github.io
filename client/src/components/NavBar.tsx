@@ -1,19 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import ThemeToggle from "./ThemeToggle";
+import Hamburger from "./Hamburger";
 import "./NavBar.css";
 
 const NavBar: React.FC = () => {
   return (
     <header className="primary-header">
+      <Hamburger />
       <div className="logo">
         <Logo />
-        {/* <NavLink
-          className={({ isActive }) => (isActive ? "text-gradient" : "")}
-          to="/"
-        >
-          <i className="fa-solid fa-house"></i>
-        </NavLink> */}
       </div>
 
       <nav>
@@ -54,12 +50,6 @@ const NavBar: React.FC = () => {
       </nav>
 
       <ThemeToggle />
-      {/* <div className="theme-toggle" title="Toggle Theme">
-        <FontAwesomeIcon
-          icon={darkTheme ? faMoon : faSun}
-          onClick={() => setDarkTheme(!darkTheme)}
-        />
-      </div> */}
     </header>
   );
 };
