@@ -14,5 +14,6 @@ jobs:
     concurrency: production
     steps:
       - run: echo "🎊 Starting Deployment of josband.github.io"
-      - run: pwd
-      - run: npm run deploy
+      - name: Deployment
+        working-directory: ./client/
+        run: npm run deploy
