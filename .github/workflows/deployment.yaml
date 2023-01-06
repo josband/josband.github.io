@@ -23,6 +23,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
           
       - run: echo "🎊 Starting Deployment of josband.github.io"
+      - name: Install Dependencies
+        working-directory: ./client/
+        run: npm i
+        
       - name: Deployment
         working-directory: ./client/
         run: npm run deploy
