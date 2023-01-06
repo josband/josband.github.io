@@ -85,6 +85,14 @@
     margin: 0 1.5rem;
   }
 
+  .primary-navigation {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+
   nav {
     width: 100%;
     background: var(--clr-main);
@@ -94,13 +102,11 @@
     top: 100%;
     transform: scale(1, 0);
     transform-origin: top;
-    transition: transform 200ms ease-in;
+    transition: transform 300ms ease;
   }
 
-  .primary-navigation {
-    flex-direction: column;
-    gap: 1rem;
-    padding-bottom: 1rem;
+  #hamburger-button[aria-expanded="true"] ~ nav .primary-navigation {
+    opacity: 1;
   }
 
   #hamburger-button[aria-expanded="true"] ~ nav {

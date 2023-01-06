@@ -8,6 +8,7 @@ const NavBar: React.FC = () => {
   return (
     <header className="primary-header">
       <Hamburger />
+
       <div className="logo">
         <Logo />
       </div>
