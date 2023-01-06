@@ -8,12 +8,11 @@ on:
     branches:
       - main
 jobs:
-  Deploy website:
+  Deploy-website:
     runs-on: ubuntu-latest
     environment: production
     concurrency: production
     steps:
-      name: deploy
       - run: echo "🎊 Starting Deployment of josband.github.io"
       - run: cd ./client/
       - run: npm run deploy
