@@ -1,0 +1,19 @@
+name: Website Deployment
+run-name: 🚀 ${{ github.actor }} is creating a new deployment of the website 🚀
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  Deploy website:
+    runs-on: ubuntu-latest
+    environment: production
+    concurrency: production
+    steps:
+      name: deploy
+      - run: echo "🎊 Starting Deployment of josband.github.io"
+      - run: cd ./client/
+      - run: npm run deploy
