@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f743efe9.css",
-    "main.js": "/static/js/main.ec33521e.js",
+    "main.css": "/static/css/main.bb531916.css",
+    "main.js": "/static/js/main.e2038b3c.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/SquareProfile.jpg": "/static/media/SquareProfile.0c908451235cb5f6b807.jpg",
     "static/media/Jonah_Osband_Resume.pdf?#zoom=FitH": "/static/media/Jonah_Osband_Resume.260732e980631c21b887.pdf",
@@ -9,12 +9,12 @@
     "static/media/theme-spinner.svg": "/static/media/theme-spinner.67a8a234ae6a44013105357a7b86e249.svg",
     "static/media/logo.svg": "/static/media/logo.1a994d7cc9ecbd7ed62f8e79fc947e0a.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.233a00a3ebd9c37c0ebd27abec0ffacf.svg",
-    "main.f743efe9.css.map": "/static/css/main.f743efe9.css.map",
-    "main.ec33521e.js.map": "/static/js/main.ec33521e.js.map",
+    "main.bb531916.css.map": "/static/css/main.bb531916.css.map",
+    "main.e2038b3c.js.map": "/static/js/main.e2038b3c.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f743efe9.css",
-    "static/js/main.ec33521e.js"
+    "static/css/main.bb531916.css",
+    "static/js/main.e2038b3c.js"
   ]
 }
