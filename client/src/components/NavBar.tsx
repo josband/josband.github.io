@@ -19,6 +19,7 @@ const NavBar: React.FC = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/"
+              onClick={() => closeNav()}
             >
               Home
             </NavLink>
@@ -27,6 +28,7 @@ const NavBar: React.FC = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/projects"
+              onClick={() => closeNav()}
             >
               Projects
             </NavLink>
@@ -43,6 +45,7 @@ const NavBar: React.FC = () => {
             <NavLink
               className={({ isActive }) => (isActive ? "text-gradient" : "")}
               to="/resume"
+              onClick={() => closeNav()}
             >
               Resume
             </NavLink>
@@ -53,6 +56,13 @@ const NavBar: React.FC = () => {
       <ThemeToggle />
     </header>
   );
+};
+
+const closeNav = () => {
+  const hamburger: HTMLElement | null =
+    document.getElementById("hamburger-button");
+  if (!hamburger) return;
+  hamburger.click();
 };
 
 export default NavBar;
