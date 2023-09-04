@@ -7,7 +7,7 @@ const Resume: React.FC = () => {
   return (
     <section className="centered-content">
       <div className="resume-description">
-        <strong>Last Updated: </strong>9/1/2022
+        <strong>Last Updated: </strong>8/21/2023
       </div>
       <object
         id="resume"

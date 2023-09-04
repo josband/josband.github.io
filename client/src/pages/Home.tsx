@@ -14,8 +14,8 @@ const Home: React.FC = () => {
             Computer Science Student at The University of Pittsburgh
           </p>
           <p className="primary-content fade-in">
-            I am currently a junior working to complete my bachelors degree,
-            with an interest in full-stack development and machine learning.
+            I am currently a senior working to complete my Bachelors Degree,
+            with an interest in full-stack development and Machine Learning.
           </p>
         </article>
         {/* 

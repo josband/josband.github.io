@@ -10,6 +10,7 @@
   padding-bottom: 1rem;
 }
 
+/* I don't know why the spacing with flex is weird for this. Will have to research */
 .summary {
   text-align: center;
   display: flex;
@@ -81,7 +82,7 @@
   min-height: 312px;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.75));
   background-image: url("../assets/SquareProfile.jpg");
-  background-size: 312px;
+  background-size: contain;
   border: 6px solid var(--clr-secondary);
   border-radius: 50%;
 }
@@ -113,11 +114,16 @@
   .profile {
     flex-direction: column-reverse;
     justify-content: start;
-    gap: 2rem;
+    gap: 3.5rem;
   }
 
   .fade-in {
     opacity: 1;
     animation: none;
   }
+}
+
+/* VERY TEMP FIX WORRY ABOUT IT LATER */
+body {
+  min-width: 425px;
 }
